@@ -27,12 +27,13 @@ Cardiowatch is a web application designed for monitoring and analyzing live ECG 
 ![Screenshot (15)](https://github.com/Siddhant0507Shekhar/CardioWatch---Live-ECG-Web-App/assets/122518146/190dc85a-829f-45ff-8368-953ba1eb5497)
 
 ## Setup Instructions
-1. Clone the repository to your local machine.
-2. Then create a virtual enviroment using "python -m venv env" and activate it using ```env/Scripts/activate``` 
-3. Install the required dependencies using "pip install -r requirements.txt"
+1. Clone the repository to your local machine using 
+       ``` git clone https://github.com/Siddhant0507Shekhar/CardioWatch---Live-ECG-Web-App```
+2. Then create a virtual enviroment using ```python -m venv env``` and activate it using ```env/Scripts/activate``` 
+3. Install the required dependencies using ```pip install -r requirements.txt```
 4. Set up the necessary configurations in the Django settings file.
-5. Migrate the database using "python manage.py migrate"
-6. Finally run the development server using "python manage.py runserver"
+5. Migrate the database using ```python manage.py migrate```
+6. Finally run the development server using ```python manage.py runserver```
  
 ## Usage
 1. Access the web application through your preferred web browser.
