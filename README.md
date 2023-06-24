@@ -1,7 +1,9 @@
 # Industry Oriented Project- EED IITR
 ### Group Participants:-
-Ritesh Gupta     Siddhant Shekhar
-Saurabh Mangla   Shivam Kr. Singhwal
+1. Ritesh Gupta
+2. Siddhant Shekhar
+3. Saurabh Mangla
+4. Shivam Kr. Singhwal
 
 # Cardiowatch - Live ECG Web Application
 Cardiowatch is a web application designed for monitoring and analyzing live ECG (Electrocardiogram) data. It provides real-time visualization of a patient's heart activity and performs classification of ECG signals into different categories using a trained CNN model. The application utilizes sensor data from the patient to generate insights and provide a user-friendly interface for healthcare professionals.
