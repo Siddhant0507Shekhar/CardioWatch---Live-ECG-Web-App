@@ -31,7 +31,7 @@ The CNN model which is used in this application can be accessed from [here](http
 ## Setup Instructions
 1. Clone the repository to your local machine using
    ```git clone https://github.com/Siddhant0507Shekhar/CardioWatch---Live-ECG-Web-App```
-   
+2. Then go to the main django project folder through ```cd main_control```   
 3. Then create a virtual enviroment using ```python -m venv env``` and activate it using ```env/Scripts/activate``` 
 4. Install the required dependencies using ```pip install -r requirements.txt```
 5. Set up the necessary configurations in the Django settings file.
