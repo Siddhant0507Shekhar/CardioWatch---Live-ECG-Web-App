@@ -2,7 +2,7 @@
 ### Group Participants:-
 1. [Ritesh Gupta](https://github.com/Riteshgupta2906)
 2. [Siddhant Shekhar](https://github.com/Siddhant0507Shekhar)
-3. Saurabh Mangla
+3. [Saurabh Mangla](https://github.com/roronoazoro342)
 4. Shivam Kr. Singhwal
 
 # Cardiowatch - Live ECG Web Application
@@ -10,7 +10,7 @@ Cardiowatch is a web application designed for monitoring and analyzing live ECG 
 
 The CNN model which is used in this application can be accessed from [here](https://github.com/Siddhant0507Shekhar/Arrhythmia-Detection-using-CNN-model) 
 
-![Screenshot (12)](https://github.com/Siddhant0507Shekhar/CardioWatch---Live-ECG-Web-App/assets/122518146/cbac12f2-a17b-4728-918e-488d2c10f2ca)
+![cardiowatch](https://github.com/Siddhant0507Shekhar/CardioWatch---Live-ECG-Web-App/assets/122518146/c67304cd-1e18-4952-bc00-14a3cfd569a0)
 
 ## Features
 1. Live ECG Monitoring: The web application receives 20-second duration ECG data from the sensors and processes it in real-time.
