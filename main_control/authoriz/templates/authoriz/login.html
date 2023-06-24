@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block extracss %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+{% endblock %}
+
+{% block content1 %}
+<!-- App-specific content goes here -->
+<br>
+<div class="centered-div">
+    {% if messages %}
+            {% for message in messages %}
+                <p style="color: red; font-weight: bold">{{ message }}</p>
+            {% endfor %}
+    {% endif %}
+    <h1 class="headlogin">Login Here</h1>
+    <form class="frm" method="post">
+        {% csrf_token %}
+        <div class="logingrid">
+            <div></div>
+            <div>
+                <label class="txt_form" for="username">Username:</label><br>
+            </div>
+            <div></div>
+            <div></div>
+            <div>
+                <input class="inp_form" type="text" id="username" name="username"><br>
+            </div>
+            <div></div>
+            <div></div>
+            <div>
+                <label class="txt_form" for="password">Password:</label><br>
+            </div>
+            <div></div>
+            <div></div>
+            <div>
+                <input class="inp_form" type="password" id="password" name="password">
+            </div>
+            <div></div>
+        </div>
+        <br>
+        <button class="submit" type="submit">Log In</button>
+    </form>
+    <div class="register">
+        <a href="/authoriz/signup" style="color: cornsilk;font-size: larger">Need a Account? Signup</a>
+    </div>
+</div>
+
+{% endblock %}

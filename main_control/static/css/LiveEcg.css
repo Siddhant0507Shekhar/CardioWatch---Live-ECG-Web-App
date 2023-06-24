@@ -1,0 +1,23 @@
+/*div{*/
+/*    border: 5px solid white;*/
+/*}*/
+.all {
+    background-image: url("_db3e956d-20e1-447c-a922-3c20c6426caf.jpg");
+    height: 92.5vh;
+}
+.centered-div{
+    margin: 100px;
+    height: 63%;
+    background-color: rgba(255, 255, 255, 0.25);
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+}
+.head_{
+    text-align: center;
+}
+.head_ h1{
+    color: yellow;
+}
+#live_telecast{
+    background-color: #e2e0e0;
+}

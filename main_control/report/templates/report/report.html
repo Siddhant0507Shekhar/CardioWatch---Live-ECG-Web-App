@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href='main_control/static/css/report.css'>
+</head>
+<body>
+<div class="report">
+    <div class="report1">
+        <h3>Patient Heart Status on {{ecg_date}}</h3>
+        <div class="symbools">
+            <div class="symbool1">
+                <div class="white">
+                </div>
+                <p>Data not available</p>
+            </div>
+            <div class="symbool2">
+                <div class="green">
+                </div>
+                <p>Healthy Ecg</p>
+            </div>
+            <div class="symbool3">
+                <div class="red">
+                </div>
+                <p>Unhealthy Ecg</p>
+            </div>
+        </div>
+        <div class="patient_status">
+
+        </div>
+    </div>
+    <div class="report2">
+        <div class="ecg_data">
+            <ul>
+                <li>Heartbeat: {{Heartrate}}</li>
+            </ul>
+            <div class="ecg_image">
+
+            </div>
+        </div>
+        <div id="googlemap">
+            <h3>Location of User</h3>
+            <div id="map">
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

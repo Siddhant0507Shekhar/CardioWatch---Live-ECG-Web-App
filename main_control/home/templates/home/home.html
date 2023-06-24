@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block extracss %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content1 %}
+<!-- App-specific content goes here -->
+<div class="hom1">
+    <div class="overlay">
+        <h2>ECG Monitoring: The Future of Healthcare</h2>
+        <br>
+        <p>ECG monitoring is a vital tool in modern healthcare, allowing physicians to identify potential cardiac issues
+            in their patients. Our web application takes this to the next level by using sophisticated algorithms to
+            classify live patient data as healthy or unhealthy, and display it for real-time diagnosis. With our
+            easy-to-use interface, healthcare professionals can monitor their patients more efficiently and effectively
+            than ever before.</p>
+    </div>
+</div>
+<div class="hom2">
+    <div>
+        <h2>Overview of ECG Monitoring</h2>
+        <p>ECG Monitoring can be used to detect a range of heart conditions, from arrhythmia to myocardial ischemia.
+            This section explains these conditions and the role that ECG monitoring plays in their diagnosis and
+            treatment.</p>
+        <div class="hom2_container">
+            <div class="hom2_con2_ele">
+                <img src="/media/fixed/day1.png" class="hom2_images">
+                <h3>Arrhythmia</h3>
+                <p>An abnormal heart rhythm that can cause lightheadedness or fainting.</p>
+            </div>
+            <div class="hom2_con2_ele">
+                <img src="/media/fixed/day1.png" class="hom2_images">
+                <h3>Myocardial Ischemia</h3>
+                <p>A lack of oxygen-rich blood to the heart, which can cause chest pain or a heart attack.</p>
+            </div>
+            <div class="hom2_con2_ele">
+                <img src="/media/fixed/day1.png" class="hom2_images">
+                <h3>ECG Monitoring</h3>
+                <p>The process of recording the electrical activity of the heart over a period of time.</p>
+            </div>
+            <div class="hom2_con2_ele">
+                <img src="/media/fixed/day1.png" class="hom2_images">
+                <h3>Diagnosis</h3>
+                <p>The use of medical tools to identify a condition and its severity.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--<div class="hom3">-->
+<!--    <h2>How the Web Application Works</h2>-->
+<!--    <p>In this section, we go deeper into the technology behind the ECG monitoring web application. Learn about the-->
+<!--        sensors and software that make this tool possible, and how they work together to simplify the process of patient-->
+<!--        monitoring.</p>-->
+<!--    <div class="hom3_container">-->
+<!--        <div class="hom3_cont_box">-->
+<!--            <div class="hom3_img">-->
+
+<!--            </div>-->
+<!--            <div class="hom3_txt">-->
+<!--                <h4>ECG Sensors</h4>-->
+<!--                <p>These devices are placed on the skin and record electrical impulses from the heart.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="hom3_cont_box">-->
+<!--            <div class="hom3_img">-->
+
+<!--            </div>-->
+<!--            <div class="hom3_txt">-->
+<!--                <h4>Healthcare Software</h4>-->
+<!--                <p>This software interprets data from the sensors and provides real-time classification of patient data-->
+<!--                    as healthy or unhealthy.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="hom3_cont_box">-->
+<!--            <div class="hom3_img">-->
+
+<!--            </div>-->
+<!--            <div class="hom3_txt">-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="hom3_cont_box">-->
+<!--            <div class="hom3_img">-->
+
+<!--            </div>-->
+<!--            <div class="hom3_txt">-->
+<!--                <h4>Web Application Interface</h4>-->
+<!--                <p>Designed to be easy-to-use and intuitive, the interface makes monitoring patients simpler and more-->
+<!--                    convenient for healthcare professionals.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+{% endblock %}

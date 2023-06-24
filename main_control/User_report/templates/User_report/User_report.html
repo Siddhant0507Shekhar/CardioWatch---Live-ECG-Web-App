@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+{% block extracss %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/User_report.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+        crossorigin=""></script>
+{% endblock %}
+
+
+{% block content1 %}
+<!-- App-specific content goes here -->
+<br>
+<div class="report">
+    <div class="row1">
+
+    </div>
+    <div class="row2">
+        <div class="r2_c1">
+            <h3>Patient Heart Status on {{ecg_date}}</h3>
+            <input type="date" id="date_input1" name="date">
+            <button class="btn" id="health_btn">Go</button>
+        </div>
+        <div class="r2_c2">
+            <div class="symbool">
+                <div class="white">
+                </div>
+                <p>Data not available</p>
+            </div>
+            <div class="symbool">
+                <div class="green">
+                </div>
+                <p>Healthy Ecg</p>
+            </div>
+            <div class="symbool">
+                <div class="red">
+                </div>
+                <p>Unhealthy Ecg</p>
+            </div>
+        </div>
+        <div class="r2_c3">
+            <img src="../../../media/fixed/health_status_img15.png" id="health_">
+        </div>
+    </div>
+    <div class="row3">
+
+    </div>
+    <div class="row4">
+        <div class="live_ecg">
+            <div class="live_ecg_head">
+                <h3>ECG DATA</h3>
+                <div class="ecg_options">
+                    <div class="ecg_btn1">
+                        <input type="date" id="date_input2" name="date">
+                        <input type="time" id="time-input" name="time">
+                        <button class="btn" id="ecg_img_btn">Go</button>
+                    </div>
+                    <div class="ecg_btn2">
+                        <input type="checkbox" id="go_live">
+                        <button class="btn" id="go_live_btn">GO LIVE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="live_ecg_info">
+                <div class="ecg_heartbeat">
+                    <h4>Heartbeat : {{heart_rate}}</h4>
+                </div>
+                <div class="date_time">
+                    Date and Time:{{datetime}}
+                </div>
+            </div>
+            <div class="ecg_image">
+                <img src="../../../media/Img_db/ecg_image1883.png" id="ecg_">
+            </div>
+        </div>
+        <div class="map">
+            <div class="map_head">
+                <h4>Location of User on {{date}} {{time}}</h4>
+            </div>
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="row5">
+
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extrajs %}
+<script type="text/javascript" src="{% static 'js/User_report.js' %}"></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"
+        integrity=""
+        crossorigin=""
+></script>
+
+{% endblock %}

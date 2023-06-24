@@ -1,0 +1,79 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CardioWatch</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block leaflet %}
+    {% endblock %}
+    {% block extracss %}
+    {% endblock %}
+</head>
+<body>
+<nav class="navbar">
+    <div class="container1">
+        <p class="head">CardioWatch</p>
+    </div>
+    <div class="container">
+        <a href="/home" style="color: #e2e0e0;text-decoration: none">Home</a>
+    </div>
+    <div class="container">
+        <a href="/LiveEcg" style="color: #e2e0e0;text-decoration: none">ECGLive</a>
+    </div>
+    <div class="container">
+        {% if user.is_authenticated %}
+            <a href="/authoriz/logout" style="color: #e2e0e0;text-decoration: none">Logout</a>
+        {% else %}
+            <a href="/authoriz/login" style="color: #e2e0e0;text-decoration: none">Signup / Login</a>
+        {% endif %}
+    </div>
+    <div class="container">
+        <a href="/user_report" style="color: #e2e0e0;text-decoration: none">User Report</a>
+    </div>
+    <div class="container">
+        <a href="#" style="color: #e2e0e0;text-decoration: none">Contact Us</a>
+    </div>
+    <div class="container2">
+        <div class="opt">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+</nav>
+<div class="slide">
+    <div class="links">
+        <a href="/home" style="color: #e2e0e0">Home</a>
+    </div>
+    <div class="links">
+        <a href="/LiveEcg" style="color: #e2e0e0">ECGLive</a>
+    </div>
+    <div class="links">
+         {% if user.is_authenticated %}
+            <a href="/authoriz/logout" style="color: #e2e0e0;text-decoration: none">Logout</a>
+         {% else %}
+            <a href="/authoriz/login" style="color: #e2e0e0;text-decoration: none">Signup / Login</a>
+         {% endif %}
+    </div>
+    <div class="links">
+        <a href="/user_report" style="color: #e2e0e0">User Report</a>
+    </div>
+    <div class="links">
+        <a href="#" style="color: #e2e0e0">Contact Us</a>
+    </div>
+</div>
+<div class="all">
+{% block content1 %}
+
+{% endblock %}
+</div>
+
+<script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+{% block extrajs %}
+
+{% endblock %}
+</body>
+</html>

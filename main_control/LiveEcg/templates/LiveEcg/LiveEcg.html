@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block extracss %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/LiveEcg.css' %}">
+<script
+        src="https://cdn.jsdelivr.net/npm/chart.js"
+        integrity=""
+        crossorigin=""
+></script>
+{% endblock %}
+
+{% block content1 %}
+<!-- App-specific content goes here -->
+<br>
+<div class="centered-div">
+    <div class="head_">
+        <h1>LIVE ECG</h1>
+    </div>
+    <div id="live_telecast">
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+</div>
+{% endblock %}
+{% block extrajs %}
+<script type="text/javascript" src="{% static 'js/LiveEcg.js' %}"></script>
+
+<script
+        src="https://cdn.jsdelivr.net/npm/chart.js"
+        integrity=""
+        crossorigin=""
+></script>
+
+{% endblock %}

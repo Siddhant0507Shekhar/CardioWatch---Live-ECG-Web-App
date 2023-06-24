@@ -1,0 +1,103 @@
+.all{
+    background-image: url("https://wallpapers.com/images/file/cool-abstract-background-s7qe8l33juhuytx0.jpg");
+}
+.hom1{
+    /*background-image: url("https://cdn.shopify.com/s/files/1/0112/3316/5374/products/FL20_resized_081820_1024x1024.jpg?v=1598985289");*/
+    /*display: flex;*/
+    /*justify-content: center; !* Center horizontally *!*/
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text within the div */
+    min-height: 400px;
+    /*padding: 100px;*/
+    color: white;
+    font-weight: bolder;
+
+}
+.hom1 h2{
+    font-size: xxx-large;
+}
+.overlay p{
+    font-weight: bolder;
+    color: white;
+}
+.overlay {
+  /* Set the overlay properties */
+  height: 30vh;
+  padding: 100px;
+  background: rgba(26, 50, 104, 0.2) /* Set the transparent blue color overlay using a linear gradient */
+}
+.hom1 h2{
+    font-size: 40px;
+}
+.hom1 p{
+    font-size: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.hom2{
+    display: grid;
+    grid-template-rows: 2fr 3fr 5fr;
+    /*background-image: url("iop_hom2.jpg");*/
+    /*margin: 100px;*/
+    height: 500px;
+    text-align: center;
+
+    /*position: absolute;*/
+}
+.hom2 > div{
+    background-color: rgba(255,255,255,0.5);
+    height: 500px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.hom2_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.hom2_images{
+    width: 200px;
+    overflow: auto;
+}
+.hom2_con2_ele{
+    background-color: rgba(12,23,122,0.2);
+    margin: 20px;
+}
+@media (max-aspect-ratio: 6/5) and (min-aspect-ratio: 4/5){
+    .overlay{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .hom1 p{
+        padding: 20px;
+    }
+    .hom2_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .hom2 > div {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-aspect-ratio: 4/5) {
+    .overlay{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .hom1 p{
+        padding: 20px;
+    }
+    .hom1{
+        min-height: 500px;
+    }
+    .hom2_container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hom2 > div {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
