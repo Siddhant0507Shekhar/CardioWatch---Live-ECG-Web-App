@@ -7,6 +7,7 @@
 
 # Cardiowatch - Live ECG Web Application
 Cardiowatch is a web application designed for monitoring and analyzing live ECG (Electrocardiogram) data. It provides real-time visualization of a patient's heart activity and performs classification of ECG signals into different categories using a trained CNN model. The application utilizes sensor data from the patient to generate insights and provide a user-friendly interface for healthcare professionals.
+
 The CNN model which is used in this application can be accessed from [here](https://github.com/Siddhant0507Shekhar/Arrhythmia-Detection-using-CNN-model) 
 
 ![Screenshot (12)](https://github.com/Siddhant0507Shekhar/CardioWatch---Live-ECG-Web-App/assets/122518146/cbac12f2-a17b-4728-918e-488d2c10f2ca)
