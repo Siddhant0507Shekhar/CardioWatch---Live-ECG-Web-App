@@ -3,7 +3,7 @@
 1. [Ritesh Gupta](https://github.com/Riteshgupta2906)
 2. [Siddhant Shekhar](https://github.com/Siddhant0507Shekhar)
 3. [Saurabh Mangla](https://github.com/roronoazoro342)
-4. Shivam Kr. Singhwal
+4. [Shivam Kr. Singhwal](https://github.com/Hiva1v1Singwall)
 
 # Cardiowatch - Live ECG Web Application
 Cardiowatch is a web application designed for monitoring and analyzing live ECG (Electrocardiogram) data. It provides real-time visualization of a patient's heart activity and performs classification of ECG signals into different categories using a trained CNN model. The application utilizes sensor data from the patient to generate insights and provide a user-friendly interface for healthcare professionals.
