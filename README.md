@@ -11,26 +11,16 @@ Cardiowatch is a web application designed for monitoring and analyzing live ECG 
 ![Screenshot (12)](https://github.com/Siddhant0507Shekhar/CardioWatch---Live-ECG-Web-App/assets/122518146/cbac12f2-a17b-4728-918e-488d2c10f2ca)
 
 ## Features
-### Live ECG Monitoring:
-The web application receives 20-second duration ECG data from the sensors and processes it in real-time.
-### ECG Segmentation:
-The backend segments the 20-second ECG data into individual heartbeats for further analysis.
-### ECG Classification:
-Each heartbeat is fed into a trained CNN model that classifies ECG signals into five classes, including one normal and four abnormal categories. The model has been trained using the MIT BIH database.
-### Color Encoding:
-The classification results are visually represented by embedding red and green colors of various intensities into the 20-second ECG data figure.
-### Image Generation: 
-The backend generates an image of the ECG data with embedded color coding, which can be accessed by the frontend API.
-### User Authentication: 
-The "authoriz" app handles user registration, login, and logout functionalities.
-### Home Page: 
-The "home" app renders the home page of the web application.
-### LiveEcg Page:
-The "LiveEcg" app renders the Live ECG web page, displaying real-time ECG data.
-### Project APIs:
-The "project" app includes several views functions such as "get_health_status," "get_ecg_image," and "get_live_data" to provide necessary data to the frontend API.
-### User Report Page:
-The "user-report" app renders the user report page, displaying the classification results and other relevant information.
+1. Live ECG Monitoring: The web application receives 20-second duration ECG data from the sensors and processes it in real-time.
+2. ECG Segmentation: The backend segments the 20-second ECG data into individual heartbeats for further analysis.
+3. ECG Classification: Each heartbeat is fed into a trained CNN model that classifies ECG signals into five classes, including one normal and four abnormal categories. The model has been trained using the MIT BIH database.
+4. Color Encoding: The classification results are visually represented by embedding red and green colors of various intensities into the 20-second ECG data figure.
+5. Image Generation: The backend generates an image of the ECG data with embedded color coding, which can be accessed by the frontend API.
+6. User Authentication:  The "authoriz" app handles user registration, login, and logout functionalities.
+7. Home Page: The "home" app renders the home page of the web application.
+8. LiveEcg Page: The "LiveEcg" app renders the Live ECG web page, displaying real-time ECG data.
+9. Project APIs: The "project" app includes several views functions such as "get_health_status," "get_ecg_image," and "get_live_data" to provide necessary data to the frontend API.
+10. User Report Page: The "user-report" app renders the user report page, displaying the classification results and other relevant information.
 
 ![Screenshot (13)](https://github.com/Siddhant0507Shekhar/CardioWatch---Live-ECG-Web-App/assets/122518146/caefe952-6dca-4e44-b4f5-72e1a58b7422)
 
@@ -38,11 +28,12 @@ The "user-report" app renders the user report page, displaying the classificatio
 
 ## Setup Instructions
 1. Clone the repository to your local machine.
-2. Install the required dependencies using pip install -r requirements.txt.
-3. Set up the necessary configurations in the Django settings file.
-4. Migrate the database using python manage.py migrate.
-5. Run the development server using python manage.py runserver.
-6. 
+2. Then create a virtual enviroment using "python -m venv env" and activate it using ```env/Scripts/activate``` 
+3. Install the required dependencies using "pip install -r requirements.txt"
+4. Set up the necessary configurations in the Django settings file.
+5. Migrate the database using "python manage.py migrate"
+6. Finally run the development server using "python manage.py runserver"
+ 
 ## Usage
 1. Access the web application through your preferred web browser.
 2. Register as a user or log in if you already have an account.
