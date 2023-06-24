@@ -13,16 +13,16 @@ The CNN model which is used in this application can be accessed from [here](http
 [![Cardiowatch](https://user-images.githubusercontent.com/122518146/248443634-c67304cd-1e18-4952-bc00-14a3cfd569a0.jpeg)](https://www.youtube.com/watch?v=Nr-_HOhATIs)
 
 ## Features
-1. Live ECG Monitoring: The web application receives 20-second duration ECG data from the sensors and processes it in real-time.
-2. ECG Segmentation: The backend segments the 20-second ECG data into individual heartbeats for further analysis.
-3. ECG Classification: Each heartbeat is fed into a trained CNN model that classifies ECG signals into five classes, including one normal and four abnormal categories. The model has been trained using the MIT BIH database.
-4. Color Encoding: The classification results are visually represented by embedding red and green colors of various intensities into the 20-second ECG data figure.
-5. Image Generation: The backend generates an image of the ECG data with embedded color coding, which can be accessed by the frontend API.
-6. User Authentication:  The "authoriz" app handles user registration, login, and logout functionalities.
-7. Home Page: The "home" app renders the home page of the web application.
-8. LiveEcg Page: The "LiveEcg" app renders the Live ECG web page, displaying real-time ECG data.
-9. Project APIs: The "project" app includes several views functions such as "get_health_status," "get_ecg_image," and "get_live_data" to provide necessary data to the frontend API.
-10. User Report Page: The "user-report" app renders the user report page, displaying the classification results and other relevant information.
+1. **Live ECG Monitoring:** The web application receives 20-second duration ECG data from the sensors and processes it in real-time.
+2. **ECG Segmentation:** The backend segments the 20-second ECG data into individual heartbeats for further analysis.
+3. **ECG Classification:** Each heartbeat is fed into a trained CNN model that classifies ECG signals into five classes, including one normal and four abnormal categories. The model has been trained using the MIT BIH database.
+4. **Color Encoding:** The classification results are visually represented by embedding red and green colors of various intensities into the 20-second ECG data figure.
+5. **Image Generation:** The backend generates an image of the ECG data with embedded color coding, which can be accessed by the frontend API.
+6. **User Authentication:**  The "authoriz" app handles user registration, login, and logout functionalities.
+7. **Home Page:** The "home" app renders the home page of the web application.
+8. **LiveEcg Page:** The "LiveEcg" app renders the Live ECG web page, displaying real-time ECG data.
+9. **Project APIs:** The "project" app includes several views functions such as "get_health_status," "get_ecg_image," and "get_live_data" to provide necessary data to the frontend API.
+10. **User Report Page:** The "user-report" app renders the user report page, displaying the classification results and other relevant information.
 
 ![Screenshot (13)](https://github.com/Siddhant0507Shekhar/CardioWatch---Live-ECG-Web-App/assets/122518146/caefe952-6dca-4e44-b4f5-72e1a58b7422)
 
